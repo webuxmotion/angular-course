@@ -1,7 +1,26 @@
 <h2>Hello Angular World!</h2>
 
+<p>{{title}} <strong>{{number - 2}}</strong></p>
+<div>{{arr}}</div>
+<div>{{obj.b.c}}</div>
+<p>{{30 + 20}}</p>
+<p>{{'test' + ' ' + '2'}}</p>
+<hr>
+
 <app-post></app-post>
+<button (click)="onClick()">Click me right now!</button>
+<input 
+    type="text" 
+    (keyup.enter)="onInput($event)"
+    (blur)="onBlur(myInput.value)"
+    #myInput
+>
+<p><strong>{{inputValue}}</strong></p>
 
 <hr>
 
 <app-post4></app-post4>
+
+<hr>
+
+<img [src]="img" width="100px">
